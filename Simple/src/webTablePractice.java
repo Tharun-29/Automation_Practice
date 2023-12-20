@@ -25,7 +25,7 @@ public class webTablePractice {
 
 		// Test Step2
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy(0,700)");
+		js.executeScript("window.scrollBy(0,500)");
 
 		// Test Step3
 		js.executeScript("document.querySelector('.tableFixHead').scrollTop=5000");
