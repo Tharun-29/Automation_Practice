@@ -18,6 +18,9 @@ public class brokenLinks {
 		 * 400 -> then that URL is not working -> Link which tied to URL is Broken
 		 *
 		 */
+		
+		// Blog about Broken Links - https://medium.com/@amaralisa321/how-to-find-broken-links-using-selenium-webdriver-6e0707bc6016
+		
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		List<WebElement> urls = driver.findElements(By.tagName("a"));

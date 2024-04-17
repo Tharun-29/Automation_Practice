@@ -13,8 +13,10 @@ public class windHandlePract{
 		driver.get("https://rahulshettyacademy.com/loginpagePractise/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.manage().window().maximize();
+		
 		// Clicking on the link in page - which opens another page in new tab in browser
 		driver.findElement(By.cssSelector("a.blinkingText")).click();
+		
 		// Now we need to switch the driver control to new tab to operate selenium
 		// actions/work in new page or else exception will be thrown
 		Set<String> windows = driver.getWindowHandles();

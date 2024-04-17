@@ -1,3 +1,5 @@
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,6 +10,8 @@ public class javascript_alert_practice {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		// Simple Alert
 		driver.findElement(By.xpath("//button[text()='Click for JS Alert']")).click();
