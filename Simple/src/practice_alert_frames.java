@@ -16,5 +16,5 @@ public class practice_alert_frames {
 		alert.accept();
 		String out = driver.findElement(By.id("demo")).getText();
 		System.out.println(out);
-	}	
+		driver.quit();	}	
 }
