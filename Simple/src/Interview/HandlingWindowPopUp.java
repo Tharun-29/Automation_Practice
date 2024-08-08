@@ -14,8 +14,7 @@ public class HandlingWindowPopUp {
          * http://Username:Password@SiteURL
          */
 
-        // Set the path for the ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        
 
         // Initialize a new ChromeDriver instance
         WebDriver driver = new ChromeDriver();
