@@ -11,11 +11,11 @@ public class RightClick_prgm {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://the-internet.herokuapp.com/context_menu");
 		driver.manage().window().maximize();
-		// Right Click actions for context menu
+		//Right Click actions for context menu
 		WebElement ele = driver.findElement(By.id("hot-spot"));
         Actions builder = new Actions(driver);
         builder.contextClick(ele).perform();
-        // Alert window displayed
+        //Alert window displayed
         Alert alt = driver.switchTo().alert();
         String out = alt.getText();
         alt.accept();

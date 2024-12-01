@@ -16,7 +16,7 @@ public class AutoSuggestiveDropdown {
 		driver.findElement(By.id("autosuggest")).sendKeys("ind");
 		//CSS Selector and FindElements used - to fetch all the values in the option
 		List<WebElement> options = driver.findElements(By.cssSelector("li.ui-menu-item a"));
-		int optsize = options.size();
+		
         for(WebElement option : options) {
         	System.out.println(option.getText());
         	if(option.getText().equalsIgnoreCase("India"))
