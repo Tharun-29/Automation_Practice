@@ -12,10 +12,10 @@ public class brokenLinks {
 
 	public static void main(String[] args) throws IOException {
 		/*
-		 * How to Find Broken Links / Automate Broken Links Steps - 1. Get all the
-		 * URL's/link in the Page using Selenium 2. Using Java Method - Will be Passing
-		 * the URL to Java methods get the status code 3. If Status Code received is >
-		 * 400 -> then that URL is not working -> Link which tied to URL is Broken
+		 * How to Find Broken Links / Automate Broken Links Steps - 
+		 * 1. Get all the URL's/link in the Page using Selenium 
+		 * 2. Using Java Method - Will be Passing the URL to Java methods get the status code 
+		 * 3. If Status Code received is > 400 -> then that URL is not working -> Link which tied to URL is Broken
 		 *
 		 */
 		

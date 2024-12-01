@@ -21,9 +21,9 @@ public class windHandlePract{
 		// actions/work in new page or else exception will be thrown
 		Set<String> windows = driver.getWindowHandles();
 		Iterator<String> it = windows.iterator();
-		String parentWindo = it.next();
-		String childWindo = it.next();
-		driver.switchTo().window(childWindo);
+		String parentWindow = it.next();
+		String childWindow = it.next();
+		driver.switchTo().window(childWindow);
 		System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
 		driver.findElement(By.cssSelector(".im-para.red")).getText();
 	}
